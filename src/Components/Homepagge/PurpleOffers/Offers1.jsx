@@ -6,7 +6,6 @@ import { useMediaQuery } from "react-responsive";
 import { Navigation } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "swiper/css/bundle"
 
 
@@ -50,7 +49,7 @@ const Offers1 = () => {
                     slidesPerView={isBigScreen ? 3 : isTablet ? 1 : isMobile ? 1 : 1}
                     spaceBetween={20}
 
-                    loop={true}
+                    loop={false}
                     loopFillGroupWithBlank={true}
                     autoplay={1000}
 

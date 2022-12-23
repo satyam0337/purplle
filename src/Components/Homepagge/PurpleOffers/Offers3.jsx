@@ -6,7 +6,6 @@ import { useMediaQuery } from "react-responsive";
 import { Navigation } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "swiper/css/bundle"
 
 
@@ -44,7 +43,7 @@ const Offers3 = () => {
                     slidesPerView={isBigScreen ? 3 : isTablet ? 1 : isMobile ? 1 : 1}
                     spaceBetween={20}
 
-                    loop={true}
+                    loop={false}
                     loopFillGroupWithBlank={true}
                     autoplay={1000}
 
@@ -62,7 +61,7 @@ const Offers3 = () => {
              }}
              key={i}
              src={el.img}
-             alt=""
+             alt="offers"
           />
           </SwiperSlide>
             ))}
