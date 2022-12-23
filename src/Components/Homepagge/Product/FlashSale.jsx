@@ -3,10 +3,8 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useMediaQuery } from "react-responsive";
-
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "swiper/css/bundle"
 
 
@@ -71,9 +69,8 @@ const FlashSale = () => {
                     slidesPerView={isBigScreen ? 4 :  isTablet ? 1 : isPortrait ? 2 :4}
                     spaceBetween={0}
 
-                    loop={true}
+                    loop={false}
                     loopFillGroupWithBlank={true}
-
                     navigation={true}
                     modules={[Navigation]}
                     className="mySwiper">
@@ -81,7 +78,7 @@ const FlashSale = () => {
                 <SwiperSlide style={{ gap: "10px", color:"black" }}>
                 <Box key={i} width="350px" height="auto">
                     <img style={{borderRadius:"5px",width:"280px", height:"350px",cursor:"pointer",paddingRight:"10px"}} src={el.img}
-                    alt=''/>
+                    alt='flash Sale'/>
                    
                 </Box>
                 </SwiperSlide>
