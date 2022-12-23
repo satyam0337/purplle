@@ -1,5 +1,5 @@
-import { Box, color, Flex, Heading, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useMediaQuery } from "react-responsive";
@@ -60,8 +60,9 @@ const CategoriesStoreData = [
 ]
 
 const CategoriesStore = () => {
+    
 
- 
+ // Media Query
     const isBigScreen = useMediaQuery({ minWidth: 1824 })
     const isTablet = useMediaQuery({ maxWidth: 600 })
     const isPortrait = useMediaQuery({ orientation: 'portrait' })
@@ -84,7 +85,7 @@ const CategoriesStore = () => {
                     slidesPerView={isBigScreen ? 4 :  isTablet ? 1 : isPortrait ? 2 :4}
                     spaceBetween={0}
 
-                    loop={true}
+                    loop={false}
                     loopFillGroupWithBlank={true}
 
                     navigation={true}
@@ -94,7 +95,7 @@ const CategoriesStore = () => {
                 <SwiperSlide style={{ gap: "25px", color:"black" }}>
                 <Box key={i} width="400px" height="400px">
                     <img style={{borderRadius:"5px",width:"auto", height:"350px",cursor:"pointer",paddingRight:"30px"}} src={el.img}
-                    alt=''/>
+                    alt='category store'/>
                    
                 </Box>
                 </SwiperSlide>

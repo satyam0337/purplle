@@ -3,10 +3,8 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useMediaQuery } from "react-responsive";
-
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "swiper/css/bundle"
 
 
@@ -50,9 +48,8 @@ const Product1 = () => {
                     slidesPerView={isBigScreen ? 4 :  isTablet ? 1 : isPortrait ? 2 :4}
                     spaceBetween={0}
 
-                    loop={true}
+                    loop={false}
                     loopFillGroupWithBlank={true}
-
                     navigation={true}
                     modules={[Navigation]}
                     className="mySwiper">
