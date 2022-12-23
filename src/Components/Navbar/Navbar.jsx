@@ -7,6 +7,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -52,16 +53,19 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <NavLink to="/">Shop Categories</NavLink>
+              <NavLink to="/">Products</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Brands</NavLink>
+            <NavLink to="/login">
+              Brands
+            </NavLink>
+              {/* <NavLink to="/login">Login</NavLink> */}
             </li>
             <li>
-              <NavLink to="/">New</NavLink>
+              <NavLink to="/about">New</NavLink>
             </li>
             <li>
-              <NavLink to="/service">Offers</NavLink>
+              <NavLink to="/cart">Offers</NavLink>
             </li>
             <li>
               <NavLink to="/contact">Magazines</NavLink>
