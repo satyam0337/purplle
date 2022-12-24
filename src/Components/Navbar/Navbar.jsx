@@ -14,20 +14,20 @@ const Navbar = () => {
 
   //  to set the colour of the navbar
   const [navStyle, setNavStyle] = useState({
-    backgroundColor: "white",
+    backgroundColor: "black",
   });
 
 // to toggle the navbar color
   const toggle = (e) => {
     e.preventDefault();
 
-    if (navStyle.backgroundColor == "white") {
+    if (navStyle.backgroundColor == "black") {
       setNavStyle({
         backgroundColor: "pink",
       });
     } else {
       setNavStyle({
-        backgroundColor: "white",
+        backgroundColor: "black",
       });
     }
     console.log("hiiii");
@@ -55,20 +55,20 @@ const Navbar = () => {
             <li>
               <NavLink to="/">Products</NavLink>
             </li>
-            <li>
-            <NavLink to="/login">
+            <li style={{ml:'4px'}}>
+            <Link to="/product">
               Brands
-            </NavLink>
+            </Link>
               {/* <NavLink to="/login">Login</NavLink> */}
             </li>
             <li>
-              <NavLink to="/about">New</NavLink>
+              <NavLink to="/new">New</NavLink>
             </li>
             <li>
               <NavLink to="/cart">Offers</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Magazines</NavLink>
+              <NavLink to="/new">Magazines</NavLink>
             </li>
           </ul>
         </div>
@@ -78,9 +78,11 @@ const Navbar = () => {
         <div className="social-media">
           <ul className="social-media-desktop">
             <li>
+              <Link  to="/login">
               <a href="">
                 <FaSearch className="search" />
               </a>
+              </Link>
             </li>
             <li>
               <a href="">
@@ -88,9 +90,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
+              <Link to='/login'> 
               <a href="">
                 <FaUser className="smile" />
               </a>
+              </Link>
             </li>
             <li>
               <a href="">
@@ -102,7 +106,7 @@ const Navbar = () => {
           {/* hamburge menu start  */}
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
+              <GiHamburgerMenu style={{marginLeft:"200px"}} />
             </a>
           </div>
         </div>

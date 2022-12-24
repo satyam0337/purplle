@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-// import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { useUserAuth } from "../context/UserAuthContext";
 import "./PhoneInput.css"
-import { Container, Row, Col } from "react-bootstrap";
+import {FormControl, Input,Box,Text,Button} from "@chakra-ui/react"
+import Navbar from "./Navbar/Navbar";
 
 const PhoneSignUp = () => {
   const [error, setError] = useState("");
@@ -46,14 +44,13 @@ const PhoneSignUp = () => {
 
   return (
     <>
-    <Container style={{ width: "400px" }}>
-      <Row>
-        <Col>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Phone Auth</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <Form onSubmit={getOtp} style={{ display: !flag ? "block" : "none" }}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Navbar/>
+    <Box mt='4' bgColor={'white'}  w='400px' height='300px' border='1px' ml={'35%'} borderRadius={'36'}>
+      <Box>
+        <Text mt='4' textAlign={'center'} mb='8' fontSize='34'color={'teal'}>Sign-In with OTP</Text>
+        {error && <aert variant="danger">{error}</aert>}
+        <form onSubmit={getOtp} style={{ display: !flag ? "block" : "none" }}>
+          <FormControl>
             <PhoneInput
               defaultCountry="IN"
               className="PhoneInput"
@@ -61,27 +58,26 @@ const PhoneSignUp = () => {
               onChange={setNumber}
               placeholder="Enter Phone Number"
             />
-            <div id="recaptcha-container"></div>
-          </Form.Group>
-          <div className="button-right">
+            <Box id="recaptcha-container"></Box>
+          </FormControl>
             <Link to="/">
-              <Button variant="secondary">Cancel</Button>
+            <Button borderRadius={'12'} height='16' w='70%' mt='4' ml={'15%'} fontSize='16'  border={'2px solid blue'} type="Submit">
+              Cancel
+          </Button>
             </Link>
             &nbsp;
-            <Button type="submit" variant="primary">
+            <Button  borderRadius={'12'} height='16' w='70%' mt='4' ml={'15%'} fontSize='16'  border={'2px solid blue'} type="Submit">
               Send Otp
             </Button>
-          </div>
-        </Form>
+        </form>
 
-        <Form onSubmit={verifyOtp} style={{ display: flag ? "block" : "none" }}>
-          <Form.Group className="mb-3" controlId="formBasicOtp">
-            <Form.Control
+        <form onSubmit={verifyOtp} style={{ display: flag ? "block" : "none" }}>
+          <FormControl>
+            <Input w='70%' h='36' mt='16' ml={'15%'}  fontSize='16' border={'2px solid messenger'}
               type="otp"
               placeholder="Enter OTP"
-              onChange={(e) => setOtp(e.target.value)}
-            />
-          </Form.Group>
+              onChange={(e) => setOtp(e.target.value)}/>
+          </FormControl>
           <div className="button-right">
             <Link to="/">
               <Button variant="secondary">Cancel</Button>
@@ -91,11 +87,9 @@ const PhoneSignUp = () => {
               Verify
             </Button>
           </div>
-        </Form>
-      </div>
-      </Col>
-      </Row>
-    </Container>
+        </form>
+      </Box>
+    </Box>
     </>
   );
 };

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
-import "../App.css"
-import { Container, Row, Col } from "react-bootstrap";
+import {FormControl, Input,Box,Text,Button} from "@chakra-ui/react"
+import Navbar from "./Navbar/Navbar";
+// import Navbar from "./Navbar/Navbar";
+
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -26,36 +26,35 @@ const Signup = () => {
 
   return (
     <>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Signup</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control
-              type="email"
+    {/* <Navbar/> */}
+    <Navbar/>
+    <Box bgColor={'white'} mt='62' w='400px' height='350px' ml={'35%'} border='2px solid black' borderRadius={'36'} >
+      <Box >
+        <Text  mt='24' textAlign={'center'} fontSize='34'color={'teal'}>Create your Account</Text>
+        {error && <alert variant="danger">{error}</alert>}
+        <form onSubmit={handleSubmit}>
+          <FormControl>
+            <Input w='70%' h='36' mt='16' ml={'15%'}  fontSize='16' border={'2px solid messenger'} type="email"
               placeholder="Email address"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
+              onChange={(e) => setEmail(e.target.value)}/>
+          </FormControl>
+          <FormControl>
+            <Input w='70%' h='36' mt='16' ml={'15%'}  fontSize='16' border={'2px solid messenger'} 
               type="password"
               placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </Form.Group>
+              onChange={(e) => setPassword(e.target.value)}  />
+          </FormControl>
 
-          <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
-              Sign up
-            </Button>
-          </div>
-        </Form>
-      </div>
-      <div className="p-4 box mt-3 text-center">
+          <Button borderRadius={'12'} height='16' w='70%' mt='16' ml={'15%'} fontSize='16' border='2px solid blue
+          ' type="Submit">
+              SignUp
+          </Button>
+        </form>
+      </Box>
+      <Box textAlign={'center'} mt='24' fontSize={'20'}>
         Already have an account? <Link to="/">Log In</Link>
-      </div>
+      </Box>
+    </Box>
     </>
   );
 };

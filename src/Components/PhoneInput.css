@@ -1,5 +1,24 @@
+.PhoneInput {
+	/* This is done to stretch the contents of this component. */
+	width: 40%;
+	/* margin-left: 100px; */
+	display: flex;
+	margin-left:-1%;
+}
+.PhoneInputInput {
+	/* The phone number input stretches to fill all empty space */
+	flex: 1;
+	/* The phone number input should shrink
+	   to make room for the extension input */
+	width: 200px;
+	height:35px;
+	margin-top: -5px;
+	border-radius: 7px;
+	font-size: 16px;
+	margin-left: 15%;
+}
 
 .PhoneInputCountryIconImg {
-	width: 10%;
-	height: 10%;
+	width: 0%;
+	height: 0%;
 }

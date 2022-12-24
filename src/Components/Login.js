@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
-import { Container, Row, Col } from "react-bootstrap";
+import {FormControl, Input,Box,Text,Button} from "@chakra-ui/react"
+import Navbar from "./Navbar/Navbar";
+// import Navbar from "./Navbar/Navbar";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -20,6 +19,7 @@ const Login = () => {
       await logIn(email, password);
       navigate("/home");
     } catch (err) {
+      alert('user not found')
       setError(err.message);
     }
   };
@@ -36,60 +36,41 @@ const Login = () => {
 
   return (
     <>
-    <Container style={{ width: "400px" }}>
-      <Row>
-        <Col>
-      <div className="p-4 box">
-        <h2 className="mb-3">Firebase Auth Login</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control
-              type="email"
-              placeholder="Email address"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
-              type="password"
+    {/* <Navbar/> */}
+    <Navbar/>
+    <Box w='400px' mt='4' height='490px' ml={'35%'} border='2px solid black' bgColor={'white'} borderRadius={'36'} >
+      <Box mt='4' >
+        <Text textAlign={'center'} fontSize='34'color={'teal'} >Login/Create Account</Text>
+        {/* {error && <alert variant="danger">{error}</alert>} */}
+        <form onSubmit={handleSubmit}>
+          <FormControl>
+            <Input w='70%' h='16' mt='12' ml={'15%'}  fontSize='16' border={'2px solid messenger'} type="email"
+                placeholder="Email address"
+                onChange={(e) => setEmail(e.target.value)} />
+          </FormControl>
+          <FormControl >
+            <Input w='70%' h={'16'} mt='8' ml={'15%'} fontSize='16' border={'2px solid messenger'}type="password"
               placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </Form.Group>
-
-          <div className="d-grid gap-2">
-            <Button variant="primary" style={{fontSize:"16px"}} type="Submit">
+              onChange={(e) => setPassword(e.target.value)} />
+          </FormControl>
+            <Button borderRadius={'24'}  border={'2px solid blue'} height='16' w='70%' mt='16' ml={'15%'} fontSize='16'   type="Submit">
               Log In
             </Button>
-          </div>
-        </Form>
-        <hr />
-        <div style={{display:"flex"}}>
-          {/* <GoogleButton
-            className="g-btn"
-            type="dark"
-            onClick={handleGoogleSignIn}
-          /> */}
-           <Button variant="success"  onClick={handleGoogleSignIn} style={{fontSize:"16px"}} type="Submit">
-              Google
+        </form>
+        <Text fontSize={'16'} mt='2' color='blue' textAlign={'center'}>OR</Text>
+           <Button borderRadius={'24'} w='70%' height='16' mt='4' ml={'15%'} fontSize='16' border={'2px solid blue'} onClick={handleGoogleSignIn} type="Submit">
+              Sign-in  With  Google
             </Button>
           <Link to="/phonesignup">
-          <div className="d-grid gap-2 mt-3">
-            <Button variant="success" style={{fontSize:"16px"}} type="Submit">
-              Sign in with OTP
+          <Button  border={'2px solid blue'} borderRadius={'24'} w='70%' height='16' mt='4' ml={'15%'} fontSize='16'  type="Submit">
+              Sign-in in With OTP
             </Button>
-          </div>
         </Link>
-        </div>
-      </div>
-      <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
-      </div>
-      </Col>
-      </Row>
-    </Container>
+      </Box>
+      <Box textAlign={'center'} mt='4' fontSize={'20'}>
+        Don't have an account? <Link to="/signup" style={{color:'blue'}}>Sign up</Link>
+      </Box>
+    </Box>
     </>
   );
 };
