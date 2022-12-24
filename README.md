@@ -1,19 +1,13 @@
 
 
-![image](https://user-images.githubusercontent.com/105915649/208593399-e1379ef2-d9fc-429a-8e68-7c07db8ea94c.png)
+![image](https://th.bing.com/th/id/OIP.eBFBx0CQBGDEkyYom4zZTgHaDt?w=337&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7)
 
 
-# Fithub : Website_Clone
+# Purplle : Website_Clone
 
 
-Fithub is an American digital fitness content publisher founded by personal trainers Kelli and Daniel Segars.
 
-Fithub Blender provides free full length workout videos, workout routines, healthy recipes and more.
-
-Speaking of the technical aspects, the site is fairly static with very few features, 
-
-Website implements the functioning of an E-commerce Website that performs various functions like sign up, sign in, log out, Product , billing, Products Details, and much more.
-
+Purplle is an operator of an online beauty shopping store created to buy skincare products based on people's hair and skin type and other personal choices. It is an online portal with a large collection of cosmetics, skincare, haircare & fragrances. It showcases some of the best products from the leading brands in the world at the best prices.
 Designed the clone with the static page with fuctional features within the stipulated time. Used and applied Reactjs, CSS and JavaScript as well as Chakra-Ui the clone. Worked with a 5-member research team for accomplishing the same. 
 ## Tech Stack
 
@@ -21,6 +15,10 @@ Designed the clone with the static page with fuctional features within the stipu
 - CSS
 - JAVSCRIPT
 - CHAKRA UI
+- Firebase
+- Node 
+- MongoDB
+
 
 
 
@@ -30,7 +28,7 @@ Designed the clone with the static page with fuctional features within the stipu
 
 ## Demo
 
-- Live Demo : https://fithub-snikhil2001.vercel.app/
+- Live Demo : 
 
 
 
@@ -38,32 +36,38 @@ Designed the clone with the static page with fuctional features within the stipu
 
 - **Home Page**
 
-![image](https://user-images.githubusercontent.com/105915649/208588267-d9127744-9cc8-44e9-a367-c19061d7d975.png)
+
+![image](https://user-images.githubusercontent.com/103956874/209437458-a2e2b8fd-8b6a-41e5-a9aa-2fa8705622e0.png)
 
  
 
-![image](https://user-images.githubusercontent.com/105915649/208593602-68add55c-6b4c-4e2b-ac3e-6b337c52368c.png)
 
-![image](https://user-images.githubusercontent.com/105915649/208593651-0d10f706-c8ee-4bbe-8b01-2a36ce86cff3.png)
+
+
+
+
 
 - **Product Page**
 
-![image](https://user-images.githubusercontent.com/105915649/208593731-c4fba2a0-4c45-4ad8-9fef-ef578ff7b2fc.png)
+![image](https://user-images.githubusercontent.com/103956874/209437491-90df8f4f-a584-4d2f-8362-820128d2e0e8.png)
+
+![image](https://user-images.githubusercontent.com/103956874/209437479-8d747ce9-b49a-466c-90b6-3647c8833ad5.png)
+
+![image](https://user-images.githubusercontent.com/103956874/209437508-e4b2eb0e-5fc6-4920-9155-40af7abd5bcc.png)
+
 
 
 - **Product Details Page**  
 
-![image](https://user-images.githubusercontent.com/105915649/208593790-a86994c6-0fc8-45b5-9f19-cbaaa3c6c210.png)
+
+![image](https://user-images.githubusercontent.com/103956874/209437660-c1f4fd94-4337-4f34-8139-af9445d4a8b6.png)
+
 
 - **Login/Sign Up Page**
 
-![image](https://user-images.githubusercontent.com/105915649/208593844-3d1ac9bb-5370-4840-b3d2-f31df9f5f286.png)
-
-![image](https://user-images.githubusercontent.com/105915649/208593885-f5cbd920-34a6-4a1c-89be-e414a24f17dd.png)
+![image](https://user-images.githubusercontent.com/103956874/209437671-e3b1a55f-9edf-4cd9-a836-84dcf28c4223.png)
 
 
-- **Cart/Checkout Page**
-![image](https://user-images.githubusercontent.com/105915649/208594210-3e9c889b-acf0-4c8c-ac6d-4cfac4b13b42.png)
 
 
 
@@ -121,8 +125,9 @@ Don't forget to give the project a star! Thanks again!
 ## Authors
 
 
-
 - [@Satyam Kumar](https://www.github.com/satyam0337)
+- [@Anand Waghmare](https://www.github.com/anand6840)
+- [@Divyanka Rai](https://www.github.com/DivyankaRai)
 
 
 
