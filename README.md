@@ -120,11 +120,10 @@ Don't forget to give the project a star! Thanks again!
 
 ## Authors
 
-- [@Nilam Anil Khose](https://www.github.com/nilamkhose2001)
-- [@Bishal Sharma](https://www.github.com/bishal00sharma)
+
+
 - [@Satyam Kumar](https://www.github.com/satyam0337)
-- [@Aman Deep Kujur](https://github.com/amandk5)
-- [@Nikhil Sahni](https://github.com/snikhil2001)
+
 
 
 
