@@ -109,9 +109,9 @@ Run project
 
 ## 🔗 Contact Me
 
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://satyam0337.github.io/)
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://anand6840.github.io/)
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://divyankarai.github.io/)
+Satyam Kumar : (https://satyam0337.github.io/)
+Anand Waghmare : (https://anand6840.github.io/)
+Divyanka Rai : (https://divyankarai.github.io/)
 
 
 
