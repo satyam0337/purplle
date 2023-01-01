@@ -28,7 +28,7 @@ Designed the clone with the static page with fuctional features within the stipu
 
 ## Demo
 
-- Live Demo : 
+- Live Demo : https://purplle-orcin.vercel.app/
 
 
 
@@ -37,7 +37,7 @@ Designed the clone with the static page with fuctional features within the stipu
 - **Home Page**
 
 
-![image](https://user-images.githubusercontent.com/103956874/209437458-a2e2b8fd-8b6a-41e5-a9aa-2fa8705622e0.png)
+![image](https://user-images.githubusercontent.com/103956874/210178868-80956c07-49a7-4faa-9b42-e0ada5b8b2cc.png)
 
  
 
@@ -49,25 +49,29 @@ Designed the clone with the static page with fuctional features within the stipu
 
 - **Product Page**
 
-![image](https://user-images.githubusercontent.com/103956874/209437491-90df8f4f-a584-4d2f-8362-820128d2e0e8.png)
+![image](https://user-images.githubusercontent.com/103956874/210178898-2dcad5b8-257c-4af5-b9a6-b2034210eb53.png)
 
-![image](https://user-images.githubusercontent.com/103956874/209437479-8d747ce9-b49a-466c-90b6-3647c8833ad5.png)
-
-![image](https://user-images.githubusercontent.com/103956874/209437508-e4b2eb0e-5fc6-4920-9155-40af7abd5bcc.png)
+![image](https://user-images.githubusercontent.com/103956874/210178918-ca9a90c1-ebf9-407e-b2c6-45d800d92329.png)
 
 
 
-- **Product Details Page**  
 
 
-![image](https://user-images.githubusercontent.com/103956874/209437660-c1f4fd94-4337-4f34-8139-af9445d4a8b6.png)
+- **Cart Details Page**  
+
+
+![image](https://user-images.githubusercontent.com/103956874/210178990-c37ba66d-4996-46a2-bf58-5ad9e619e615.png)
 
 
 - **Login/Sign Up Page**
 
-![image](https://user-images.githubusercontent.com/103956874/209437671-e3b1a55f-9edf-4cd9-a836-84dcf28c4223.png)
+![image](https://user-images.githubusercontent.com/103956874/210179106-e83a1e44-de58-4b6d-ab20-ad7a8b032085.png)
 
+![image](https://user-images.githubusercontent.com/103956874/210179093-698f166f-4abc-4724-bcb3-94429575b50d.png)
 
+- **Payment Page**
+
+![image](https://user-images.githubusercontent.com/103956874/210179042-9f8da59e-edad-476f-8733-45283a8372d9.png)
 
 
 
@@ -106,7 +110,9 @@ Run project
 ## 🔗 Contact Me
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://satyam0337.github.io/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/satyam-kumar-526004237/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://anand6840.github.io/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://divyankarai.github.io/)
+
 
 
 
