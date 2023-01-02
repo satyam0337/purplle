@@ -8,7 +8,7 @@
 
 
 Purplle is an operator of an online beauty shopping store created to buy skincare products based on people's hair and skin type and other personal choices. It is an online portal with a large collection of cosmetics, skincare, haircare & fragrances. It showcases some of the best products from the leading brands in the world at the best prices.
-Designed the clone with the static page with fuctional features within the stipulated time. Used and applied Reactjs, CSS and JavaScript as well as Chakra-Ui the clone. Worked with a 5-member research team for accomplishing the same. 
+Designed the clone with the static page with fuctional features within the stipulated time. Used and applied Reactjs, CSS and JavaScript as well as Chakra-Ui the clone. Worked with a 3-member research team for accomplishing the same. 
 ## Tech Stack
 
 - REACT.js
