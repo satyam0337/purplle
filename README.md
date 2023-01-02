@@ -134,13 +134,8 @@ Don't forget to give the project a star! Thanks again!
 
 
 - [@Satyam Kumar](https://www.github.com/satyam0337)
-
-<br/>
-
-- [@Anand Waghmare](https://www.github.com/anand6840)
-
-<br/>
-- [@Divyanka Rai](https://www.github.com/DivyankaRai)
+- [@Anand Waghmare](https://github.com/anand6840)
+- [@Divyanka Rai](https://github.com/DivyankaRai)
 
 
 
