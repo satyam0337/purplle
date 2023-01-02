@@ -75,6 +75,16 @@ Designed the clone with the static page with fuctional features within the stipu
 
 
 
+- **Admin Page**
+
+![image](https://user-images.githubusercontent.com/103956874/210201075-1610b88b-146a-4b83-87da-c326de460eeb.png)
+
+![image](https://user-images.githubusercontent.com/103956874/210201129-4b498279-34f1-4233-886d-0dc11007f20f.png)
+
+
+
+
+
 
 ## Installation
 
