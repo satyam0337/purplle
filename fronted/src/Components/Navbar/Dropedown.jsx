@@ -44,7 +44,7 @@ const MenSubNav = () => {
                 // h="49px"
               >
                 <Link className={styles.Link} to="/makeup">
-                  <Text className={styles.text}>MAKEUP</Text>
+                  <Text className={styles.text}>SHOP CATEGORY</Text>
                   <ChevronDownIcon />
                 </Link>
               </Flex>
@@ -293,7 +293,7 @@ const MenSubNav = () => {
                 h="49px"
               >
                 <Link className={styles.Link} to="/products">
-                  <Text className={styles.text}>SKIN</Text>
+                  <Text className={styles.text}>BRANDS</Text>
                   <ChevronDownIcon />
                 </Link>
               </Flex>
@@ -429,7 +429,7 @@ const MenSubNav = () => {
                 h="49px"
               >
                 <Link className={styles.Link} to="/">
-                  <Text className={styles.text}>HAIR</Text>
+                  <Text className={styles.text}>OFFERS</Text>
                   <ChevronDownIcon />
                 </Link>
               </Flex>
@@ -499,10 +499,10 @@ const MenSubNav = () => {
                       style={{ width: "760px" }}
                     >
                       <div>
-                        <img
+                        {/* <img
                           src="https://www.beautybebo.com/pub/media/mega-menu/hair_cata.jpg"
                           alt=""
-                        />
+                        /> */}
                       </div>
                     </div>
                   </div>
@@ -592,10 +592,10 @@ const MenSubNav = () => {
                       style={{ width: "580px" }}
                     >
                       <div>
-                        <img
+                        {/* <img
                           src="https://www.beautybebo.com/pub/media/mega-menu/personal_cata.jpg"
                           alt=""
-                        />
+                        /> */}
                       </div>
                     </div>
                   </div>
@@ -671,10 +671,10 @@ const MenSubNav = () => {
                       style={{ width: "760px" }}
                     >
                       <div>
-                        <img
+                        {/* <img
                           src="https://www.beautybebo.com/pub/media/mega-menu/mom_baby_cata.jpg"
                           alt=""
-                        />
+                        /> */}
                       </div>
                     </div>
                   </div>
@@ -682,7 +682,7 @@ const MenSubNav = () => {
               </div>
             </li>
             {/*fragrances */}
-            <li>
+            {/* <li>
               <Flex
                 color={"white"}
                 _hover={{ bgColor: "white", color: "black" }}
@@ -712,9 +712,9 @@ const MenSubNav = () => {
                   </Flex>
                 </div>
               </div>
-            </li>
+            </li> */}
             {/*Ayurveda */}
-            <li>
+            {/* <li>
               <Flex
                 color={"white"}
                 _hover={{ bgColor: "white", color: "black" }}
@@ -809,7 +809,7 @@ const MenSubNav = () => {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
             {/*Brands */}
             <li>
               <Flex
@@ -833,7 +833,7 @@ const MenSubNav = () => {
                     <Button colorScheme="red">VIEW ALL</Button>
                   </Flex>
                   <br />
-                  <Grid templateColumns="repeat(6, 1fr)" gap={4}>
+                  {/* <Grid templateColumns="repeat(6, 1fr)" gap={4}>
                     <Button colorScheme="green">LAKME</Button>
                     <Button colorScheme="green">L-OREAL-PARIS</Button>
                     <Button colorScheme="green">JOY</Button>
@@ -846,7 +846,7 @@ const MenSubNav = () => {
                     <Button colorScheme="green">MAMAEARTH</Button>
                     <Button colorScheme="green">CHICCO</Button>
                     <Button colorScheme="green">NEUTROGENA</Button>
-                  </Grid>
+                  </Grid> */}
                 </div>
               </div>
             </li>
