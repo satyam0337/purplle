@@ -53,28 +53,12 @@ export default function Dashboard() {
         <Loading />
       ) : (
         <Flex justifyContent="space-around" flexWrap="wrap">
+  
           <Box
             w="20%"
             textAlign="center"
-            border="1px solid black"
-            bgColor="blue.300"
-          >
-            <Flex justifyContent="center">
-              {" "}
-              <Image
-                src="/user_logo.png"
-                w={["60%", "60%", "100%", "100%"]}
-              />{" "}
-            </Flex>
-            <Text mt="15px" fontSize={["10px", "10px", "14px", "24px"]}>
-              {user} Users Active
-            </Text>
-          </Box>
-          <Box
-            w="20%"
-            textAlign="center"
-            border="1px solid black"
-            bgColor="blue.300"
+            
+           
           >
             <Flex justifyContent="center">
               <Image
@@ -89,8 +73,8 @@ export default function Dashboard() {
           <Box
             w="20%"
             textAlign="center"
-            border="1px solid black"
-            bgColor="blue.300"
+          
+           
           >
             <Flex justifyContent="center">
               {" "}
@@ -107,27 +91,7 @@ export default function Dashboard() {
               {product} Products In Our Stock
             </Text>
           </Box>
-          <Box
-            w="20%"
-            textAlign="center"
-            border="1px solid black"
-            bgColor="blue.300"
-          >
-            <Flex justifyContent="center">
-              {" "}
-              <Image
-                src="/product_logo.png"
-                w={["60%", "60%", "100%", "100%"]}
-              />{" "}
-            </Flex>
-            <Text
-              color="red"
-              mt="15px"
-              fontSize={["10px", "10px", "14px", "24px"]}
-            >
-              {data - product} Products Out of Stock
-            </Text>
-          </Box>
+      
         </Flex>
       )}
     </div>
