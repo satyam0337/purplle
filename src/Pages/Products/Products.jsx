@@ -23,6 +23,47 @@ export default function Products() {
   const Token = GetLocal("auth") || false;
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const [currentPage, setcurrentPage] = useState(1)
+  const [postsPerPage, setpostperPage] = useState(9)
+
+  const sorting=(value)=>{
+    // console.log(value)
+    let highest = makeup
+    if(value==="highest"){
+       highest = makeup.sort((b,a)=>a.price - b.price)
+    }
+    else if(value==="lowest"){
+      highest = makeup.sort((a,b)=>a.price - b.price)
+    }
+    else if(value==="asc"){
+
+      highest = makeup.sort((a,b)=>{
+        if (a.name < b.name) {
+          return -1;
+        }
+        if (a.name > b.name) {
+          return 1;
+        }
+        return 0;
+      })
+    }
+    else if(value==="desc"){
+      highest = makeup.sort((a,b)=>{
+        if (a.name < b.name) {
+          return 1;
+        }
+        if (a.name > b.name) {
+          return -1;
+        }
+        return 0;
+      })
+    }
+   
+    console.log(highest);
+    setmakeup([...highest])
+
+  }
   const makeupData = () => {
     axios
       .get(`https://repulsive-nightgown-colt.cyclic.app/products?category=skin`)
@@ -34,6 +75,9 @@ export default function Products() {
       });
   };
 
+  const lastPostIndex = currentPage * postsPerPage
+  const firstPostIndex = lastPostIndex - postsPerPage 
+  const currPost =  makeup.slice(firstPostIndex, lastPostIndex)
   const Get_update = () => {
     setLoad(true);
     simulateNetworkRequest().then((res)=>setLoad(false))
@@ -73,6 +117,18 @@ export default function Products() {
     makeupData();
   }, []);
   return (
+    <>
+    <form>
+      <select id="sort" name="sort" onClick={(e)=>sorting(e.target.value)}>
+        <option value="lowest">Price(lowest)</option>
+        <option value="#" disabled></option>
+        <option value="highest">Price(highest)</option>
+        <option value="#" disabled></option>
+        <option value="asc">Ascending(a-z)</option>
+        <option value="#" disabled></option>
+        <option value="desc">Descending(z-a)</option>
+      </select>
+    </form>
     <div style={{ display: "flex", width: "80%", margin: "auto" }}>
       {Load ? (
         <Flex alignItems="center" justifyContent="center" p="30px">
@@ -81,8 +137,7 @@ export default function Products() {
       ) : (
         <>
           <div id={style.makeup_main_container}>
-            {makeup.length > 0 &&
-              makeup.map((item) => {
+            {currPost.map((item) => {
                 return (
                   <div id={style.makeup_main_div}>
                     <div id={style.makeup_img_div}>
@@ -122,5 +177,6 @@ export default function Products() {
         </>
       )}
     </div>
+    </>
   );
 }
