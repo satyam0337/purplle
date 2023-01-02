@@ -8,7 +8,7 @@
 
 
 Purplle is an operator of an online beauty shopping store created to buy skincare products based on people's hair and skin type and other personal choices. It is an online portal with a large collection of cosmetics, skincare, haircare & fragrances. It showcases some of the best products from the leading brands in the world at the best prices.
-Designed the clone with the static page with fuctional features within the stipulated time. Used and applied Reactjs, CSS and JavaScript as well as Chakra-Ui the clone. Worked with a 5-member research team for accomplishing the same. 
+Designed the clone with the static page with fuctional features within the stipulated time. Used and applied Reactjs, CSS and JavaScript as well as Chakra-Ui the clone. Worked with a 3-member research team for accomplishing the same. 
 ## Tech Stack
 
 - REACT.js
@@ -37,7 +37,7 @@ Designed the clone with the static page with fuctional features within the stipu
 - **Home Page**
 
 
-![image](https://user-images.githubusercontent.com/103956874/210178868-80956c07-49a7-4faa-9b42-e0ada5b8b2cc.png)
+![image](https://user-images.githubusercontent.com/103956874/210200519-45762ab0-b4af-490e-9ae0-c39643cfb608.png)
 
  
 
@@ -49,9 +49,9 @@ Designed the clone with the static page with fuctional features within the stipu
 
 - **Product Page**
 
-![image](https://user-images.githubusercontent.com/103956874/210178898-2dcad5b8-257c-4af5-b9a6-b2034210eb53.png)
+![image](https://user-images.githubusercontent.com/103956874/210200543-3db8675e-9246-4b63-bc7a-284399f7509a.png)
 
-![image](https://user-images.githubusercontent.com/103956874/210178918-ca9a90c1-ebf9-407e-b2c6-45d800d92329.png)
+![image](https://user-images.githubusercontent.com/103956874/210200573-fa3128e7-4f92-466a-a1b1-7f8c8befb40b.png)
 
 
 
@@ -60,18 +60,28 @@ Designed the clone with the static page with fuctional features within the stipu
 - **Cart Details Page**  
 
 
-![image](https://user-images.githubusercontent.com/103956874/210178990-c37ba66d-4996-46a2-bf58-5ad9e619e615.png)
+![image](https://user-images.githubusercontent.com/103956874/210200604-47d3478c-3bff-4a7e-acf5-00dc13cb47f3.png)
 
 
 - **Login/Sign Up Page**
 
-![image](https://user-images.githubusercontent.com/103956874/210179106-e83a1e44-de58-4b6d-ab20-ad7a8b032085.png)
+![image](https://user-images.githubusercontent.com/103956874/210200715-ddc0dbe5-7cc2-4bee-bb11-5651e1256d91.png)
 
-![image](https://user-images.githubusercontent.com/103956874/210179093-698f166f-4abc-4724-bcb3-94429575b50d.png)
+![image](https://user-images.githubusercontent.com/103956874/210200685-ad8b2b90-067e-47be-8ddb-0b79ba197b76.png)
 
 - **Payment Page**
 
-![image](https://user-images.githubusercontent.com/103956874/210179042-9f8da59e-edad-476f-8733-45283a8372d9.png)
+![image](https://user-images.githubusercontent.com/103956874/210200655-8835a3d4-f09c-401e-b375-8e7f05129cfe.png)
+
+
+
+- **Admin Page**
+
+![image](https://user-images.githubusercontent.com/103956874/210201075-1610b88b-146a-4b83-87da-c326de460eeb.png)
+
+![image](https://user-images.githubusercontent.com/103956874/210201129-4b498279-34f1-4233-886d-0dc11007f20f.png)
+
+
 
 
 
