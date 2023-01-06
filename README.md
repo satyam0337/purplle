@@ -1,6 +1,5 @@
 
-
-![image](https://th.bing.com/th/id/OIP.eBFBx0CQBGDEkyYom4zZTgHaDt?w=337&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7)
+![image](https://user-images.githubusercontent.com/105915649/211062321-3c0a5609-d8e6-47c0-aff0-997dd77e557a.png)
 
 
 # Purplle : Website_Clone
